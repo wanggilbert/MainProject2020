@@ -34,7 +34,7 @@ namespace Michsky.UI.ModernUIPack
 
         string textHelper;
         bool isOn;
-        int iHelper;
+       // int iHelper;
 
         [System.Serializable]
         public class ToggleEvent : UnityEvent<bool> { }
@@ -68,7 +68,7 @@ namespace Michsky.UI.ModernUIPack
                 textHelper = dropdownItems[i].itemName;
                 setItemText.text = textHelper;
 
-                iHelper = i;
+                //iHelper = i;
                 Toggle itemToggle;
                 itemToggle = go.GetComponent<Toggle>();
 

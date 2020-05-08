@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 namespace Michsky.UI.ModernUIPack
 {
@@ -9,7 +10,7 @@ namespace Michsky.UI.ModernUIPack
 
         [Header("RESOURCES")]
         public Animator animatedButton;
-        public TextMeshProUGUI title;
+        public Text title;
 
         [Header("SETTINGS")]
         public bool openAtStart = false;

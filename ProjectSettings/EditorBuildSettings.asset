@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/testYunWei.unity
     guid: 17abdfdbddd430d408d35540e20c0c75
+  - enabled: 1
+    path: Assets/Scenes/testSubtitles.unity
+    guid: d3804d2bd514921419b68876741cec02
   m_configObjects: {}

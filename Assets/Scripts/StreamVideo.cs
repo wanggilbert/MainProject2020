@@ -9,10 +9,17 @@ public class StreamVideo : MonoBehaviour
     public RawImage rawImage;
     public VideoPlayer videoplayer;
     public AudioSource audioSource;
-
+    public GameObject textWait;
+    /*
+private void Awake()
+    {
+        StartCoroutine(PlayVideo());
+    }
+    */
     private void Start()
     {
-        StartCoroutine(PlayVideo()); 
+        StartCoroutine(PlayVideo());
+        audioSource.Play();
     }
 
     IEnumerator PlayVideo()
@@ -25,7 +32,9 @@ public class StreamVideo : MonoBehaviour
             break;
         }
         rawImage.texture = videoplayer.texture;
+        Destroy(textWait);
         videoplayer.Play();
-        audioSource.Play();
+        
     }
+
 }
